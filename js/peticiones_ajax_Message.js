@@ -193,7 +193,8 @@ function guardarInformacion(){
         url: 'https://gcfd9f35194e15c-jn68qx7m5o55w9x5.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message',
 		
 		data:{
-			MESSAGETEXT: $("#messagetext").val(),
+			id: $("#codigo").val(),
+                                                        Messagetext: $("#messagetext").val(),
 			//fecha: "23/09/2022",
 			//fecha: $("#stars").val("date"),
 			 //MODEL: $("#model").val(),
