@@ -179,13 +179,13 @@ function consultaID(id){
 
 function guardarInformacion(){
 	
-	if(!validarCampo($("#name"))){
-		alert("Debe ingresar el nombre");
+	if(!validarCampo($("#id"))){
+		alert("Debe ingresar el id");
 		return;
 	}
 	
-	if(!validarCampo($("#valor"))){
-		alert("Debe ingresar un valor");
+	if(!validarCampo($("#messagetext"))){
+		alert("Debe ingresar mensaje");
 		return;
 	}	
 	
@@ -256,7 +256,7 @@ function editar_Informacion(){
     console.log(myData);
     let dataToSend = JSON.stringify(myData);
 	
-	if (confirm("Está seguro de eliminar el registro:  " + $("#codigo").val() + "  ??")){
+	if (confirm("Está seguro de guardar el registro:  " + $("#codigo").val() + "  ??")){
 		
 		$.ajax({
 			url:"https://gcfd9f35194e15c-jn68qx7m5o55w9x5.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message",
